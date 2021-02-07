@@ -1,0 +1,23 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.20'
+}
+
+group 'so.homin'
+version '0.0.1'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation "com.github.RoaringBitmap.RoaringBitmap:RoaringBitmap:0.9.9"
+    implementation "me.lemire.integercompression:JavaFastPFOR:[0.1,)"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.3.1"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.3.1"
+}
+
+test {
+    useJUnitPlatform()
+}
