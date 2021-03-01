@@ -43,7 +43,7 @@ domain.add(0)
 domain.add(2)
 ...
 
-val relations = matrix.getUniqueRelations(domain)
+val relations: MutableRoaringBitmap = matrix.getUniqueRelations(domain)
 ```
 
 
